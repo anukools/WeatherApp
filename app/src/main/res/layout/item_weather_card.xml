@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1px"
+    android:background="?android:attr/selectableItemBackground"
+    card_view:cardBackgroundColor="#FFF"
+    card_view:cardCornerRadius="0dp">
+
+    <RelativeLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_24"
+        android:paddingEnd="@dimen/content_padding"
+        android:paddingStart="@dimen/content_padding"
+        android:paddingTop="@dimen/margin_32">
+
+
+        <in.anukool.weatherapp.util.CustomTextView
+            android:id="@+id/txt_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Tuesday"
+            android:textColor="@color/temp_color"
+            android:textSize="@dimen/font_16"
+            app:fontName="@string/font_regular" />
+
+
+        <in.anukool.weatherapp.util.CustomTextView
+            android:id="@+id/txt_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="20dsf"
+            android:textColor="@color/temp_color"
+            android:textSize="@dimen/font_16"
+            app:fontName="@string/font_regular" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+
+
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <in.anukool.weatherapp.util.LoadingImageView
+        android:id="@+id/loading_status"
+        android:layout_width="@dimen/loader_size_96"
+        android:layout_height="@dimen/loader_size_96"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/weather_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_88"
+            android:paddingTop="@dimen/margin_56">
+
+            <in.anukool.weatherapp.util.CustomTextView
+                android:id="@+id/text_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/temp_color"
+                android:textSize="@dimen/font_96"
+                app:fontName="@string/font_black"
+                tools:text="17 °C" />
+
+            <in.anukool.weatherapp.util.CustomTextView
+                android:id="@+id/text_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/city_color"
+                android:textSize="@dimen/font_36"
+                app:fontName="@string/font_thin"
+                tools:text="Wrocław, PL" />
+
+            <in.anukool.weatherapp.util.CustomTextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/text_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:textSize="@dimen/font_16"
+                app:fontName="@string/font_regular"
+                tools:text="Mostly cloudy" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/weather_forecast_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:background="@color/white_color"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/error_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/error_bg_color"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <in.anukool.weatherapp.util.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:text="@string/error_message"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/font_54"
+            app:fontName="@string/font_thin" />
+
+
+        <in.anukool.weatherapp.util.CustomTextView
+            android:id="@+id/retry_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:background="@color/retry_bg_color"
+            android:paddingBottom="5dp"
+            android:paddingEnd="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:text="@string/retry"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/font_16"
+            app:fontName="@string/font_regular" />
+
+    </LinearLayout>
+
+</RelativeLayout>

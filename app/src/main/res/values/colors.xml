@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#1A1A1A</color>
+    <color name="primary_dark">#2A2A2A</color>
+    <color name="primary_light">#F5F6F7</color>
+    <color name="accent">#E85959</color>
+
+
+    <color name="main_bg_color">#F5F6F7</color>
+    <color name="error_bg_color">#E85959</color>
+    <color name="retry_bg_color">#4A4A4A</color>
+
+    <color name="white_color">#FFFFFF</color>
+    <color name="temp_color">#2A2A2A</color>
+    <color name="city_color">#556799</color>
+
+
+</resources>

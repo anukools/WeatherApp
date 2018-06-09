@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="content_padding">16dp</dimen>
+
+    <dimen name="scroll_horizontal_padding">16dp</dimen>
+    <dimen name="scroll_vertical_padding">16dp</dimen>
+
+    <dimen name="loader_size_96">96sp</dimen>
+
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_56">56dp</dimen>
+    <dimen name="margin_88">80dp</dimen>
+
+
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_36">36sp</dimen>
+    <dimen name="font_96">96sp</dimen>
+    <dimen name="font_54">54sp</dimen>
+
+</resources>
